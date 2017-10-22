@@ -1,4 +1,4 @@
-wx	#! /bin/bash
+#! /bin/bash
 	if [ -z "$1" ]
 	then
 	     ProjectName="wx"
@@ -23,9 +23,9 @@ wx	#! /bin/bash
 	echo your github Branch must be $GitBranch
 	cd ./code
 	if [ -d .git ]; then
-		sudo git checkout .
-		sudo git fetch
-		sudo git checkout $GitBranch
+		# sudo git checkout .
+		# sudo git fetch
+		# sudo git checkout $GitBranch
 		sudo git pull origin $GitBranch
 		cd ../
 	else

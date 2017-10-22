@@ -28,6 +28,8 @@ services:
         # volumes_from:
         #   - storage-drupal
         volumes:
+          - '/var/run/mysqld/mysqld.sock:/var/run/mysqld/mysqld.sock:ro'
+          - '/usr/local/bin/drush.phar:/usr/local/bin/drush.phar:ro'
           - "./conf/php/log.conf:/usr/local/etc/php-fpm.d/zz-log.conf:ro"
           # - ./conf/php/www.conf:/usr/local/etc/php-fpm.d/www.conf
           - ./conf/php/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
