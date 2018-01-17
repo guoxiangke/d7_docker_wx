@@ -26,7 +26,7 @@
 		# sudo git checkout .
 		# sudo git fetch
 		# sudo git checkout $GitBranch
-		sudo git pull origin $GitBranch
+		git pull origin $GitBranch
 		cd ../
 	else
 		cd ../

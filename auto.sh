@@ -1,7 +1,7 @@
 #! /bin/bash
 pwd
-git pull  && git push 
-cd ../
-ssh root@bce.yongbuzhixi.com<< EOF
-cd /var/www/d7_docker_wx && git pull && ./run.sh
+git pull
+git push
+ssh root@123.207.178.25<< EOF
+cd /root/html/d7_docker_wx && git checkout && git pull && ./run.sh
 EOF
